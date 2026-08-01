@@ -339,7 +339,7 @@
       }
       if (rel.size) {
         html += `<div class="also"><div class="proof-label">Connected Skills</div><div class="also-chips">`;
-        [...rel].slice(0, 8).forEach((o) => { html += `<button data-goto="${o.slug}">${o.name}</button>`; });
+        [...rel].forEach((o) => { html += `<button data-goto="${o.slug}">${o.name}</button>`; });
         html += `</div></div>`;
       }
     } else {
